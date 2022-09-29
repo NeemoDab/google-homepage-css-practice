@@ -1,0 +1,10 @@
+.container{
+    display:flex;
+}
+h1{
+    color: blue;
+    text-align: center;
+}
+button{
+    color:blue;
+}
