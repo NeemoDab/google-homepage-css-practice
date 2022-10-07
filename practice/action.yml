@@ -1,0 +1,18 @@
+
+name: Increment Git Tag
+desciption: Increments git tag based on provided version type
+inputs:
+# variable name that we will reference in the code
+  version-type:
+    desciption: Provide version type [major, minor , patch]
+    required: true
+    default: patch
+outputs:
+# can be used to attach docker images
+  new-version:
+    description: Increment version based on input
+runs:
+  using: node12
+  main: actions/index.js
+
+
